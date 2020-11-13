@@ -1,3 +1,7 @@
+ユーザー名とパスワード変更して使う。  
+POSTGRES_USER: root  
+POSTGRES_PASSWORD: password  
+
 # コマンド
 
 ### プロジェクト内のコンテナ起動  
