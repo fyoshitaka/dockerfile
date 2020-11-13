@@ -1,7 +1,7 @@
 ユーザー名とパスワード変更して使う。  
   
-POSTGRES_USER: root  
-POSTGRES_PASSWORD: password  
+POSTGRES_USER: [ユーザー名]  
+POSTGRES_PASSWORD: [パスワード]  
   
 # コマンド
 
