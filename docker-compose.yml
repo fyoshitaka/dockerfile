@@ -2,15 +2,15 @@ version: "3"
 services:
   database:
     image: postgres:9.6.19-alpine
-    container_name: pos_db
+    container_name: postgresql96
     ports:
       - 5432:5432
     volumes:
       - postgres-data-volume:/var/lib/postgresql/data
-      - init-data-volume:/docker-entrypoint-initdb.d
+      - postgres-init-volume:/docker-entrypoint-initdb.d
     environment:
-      POSTGRES_USER: root # ユーザー名
-      POSTGRES_PASSWORD: root # パスワード
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
       POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
     hostname: postgres
     restart: always
