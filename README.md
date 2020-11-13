@@ -2,7 +2,7 @@
   
 POSTGRES_USER: root  
 POSTGRES_PASSWORD: password  
-
+  
 # コマンド
 
 ### プロジェクト内のコンテナ起動  
