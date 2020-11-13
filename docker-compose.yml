@@ -16,6 +16,7 @@ services:
     restart: always
     user: root
 
+# ボリューム名を付ける
 volumes:
   postgres-data-volume:
     name: postgres-data
