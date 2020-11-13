@@ -5,8 +5,8 @@ docker-compose up -d
 
 ボリュームの確認  
 docker volume ls  
-
-コンテナ削除後にボリュームを削除する。  
+  
+コンテナ削除後、ボリュームを削除する。  
 
 ボリュームの削除  
 docker volume rm ボリューム名
