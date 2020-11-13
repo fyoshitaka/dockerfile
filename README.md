@@ -1,18 +1,20 @@
 # コマンド
 
-プロジェクト内のコンテナ起動  
+### プロジェクト内のコンテナ起動  
 docker-compose up -d  
 
-実行中コンテナの中でコマンド実行  
-docker-compose exec [コンテナID or コンテナ名] [コンテナ内で実行するコマンド]
+### 実行中コンテナの中でコマンド実行  
+docker-compose exec [コンテナID or コンテナ名] [コンテナ内で実行するコマンド]  
 
-ボリュームの確認  
+## ボリューム管理
+
+### ボリュームの確認  
 docker volume ls    
 
-コンテナ削除後、ボリュームを削除する。  
+*コンテナ削除後、ボリュームを削除する。*  
 
-ボリュームの削除  
+### ボリュームの削除  
 docker volume rm [ボリューム名]
 
-ボリュームの全削除  
+### ボリュームの全削除  
 docker volume rm $(docker volume ls -qf dangling=true)
